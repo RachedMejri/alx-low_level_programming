@@ -1,16 +1,17 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - entery point
+ * main - Entry point of the program
  *
- *  Description: this is like the last programe but with the damn puts.
+ * Description: this programe checks the types
  *
- * Return always 0 (success)
-*/
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
 
 	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
+
 }
