@@ -3,7 +3,7 @@
 /**
  * main - entery point
  *
- * Description: print using hte n one
+ *  Description: this is like the last programe but with the damn puts.
  *
  * Return always 0 (success)
 */
