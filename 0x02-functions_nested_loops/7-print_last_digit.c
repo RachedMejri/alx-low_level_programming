@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
  * _abs - Prints the alphabet in lowercase 10 times
@@ -12,6 +13,5 @@
 int print_last_digit(int n)
 {
 
-	return (n % 10);
-
+    return (abs(n % 10));
 }
