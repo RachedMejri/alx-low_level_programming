@@ -5,8 +5,8 @@
  * Description: to check if the number is positive, negative, or zero
  *
  * Return: Always 0 (Success)
-*/
-i
+ */
+
 int main(void)
 {
 
