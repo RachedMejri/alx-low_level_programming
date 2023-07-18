@@ -1,9 +1,8 @@
-#include <main.h>
+#include "main.h"
 #include <string.h>
 
 /**
- * print_alphabet - write the whole alpha lol
- *
+ * print_alphabet - writes the whole alphabet
  */
 
 void print_alphabet(void)
@@ -18,3 +17,4 @@ void print_alphabet(void)
 		_putchar(alpha[i]);
 	}
 }
+
