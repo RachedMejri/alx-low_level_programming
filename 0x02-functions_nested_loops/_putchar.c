@@ -1,17 +1,15 @@
 #include <main.h>
-#include <stdio.h>
+
 /**
- * main - entry point
+ * _putchar - write 1 cartc
+ * @c: al carcter
  *
- *Description: to check if the number is positive, negative, or zero
- *
- *Return: Always 0 (Success)
+ * Return: On success, returns the character written.
+ *         On error, returns -1.
  */
 
-int _putchar(char str)
-
+void _putchar(char c)
 {
 
-	printf("%c\n",str);
-	return(0);
-}	
+	return (write(1, &c, 1));
+}

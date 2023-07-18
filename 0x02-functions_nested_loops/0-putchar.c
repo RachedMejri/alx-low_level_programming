@@ -1,15 +1,23 @@
 #include "main.h"
+#include <string.h>
+
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: to check if the number is positive, negative, or zero
+ * Description: Prints "_putchar" followed by a new line
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+	char text[] = "_putchar\n";
+	int length = strlen(text);
 
-	_putchar("_putchar");
+	for (int i = 0; i < length; i++)
+	{
+		_putchar(text[i]);
+	}
+
 	return (0);
 }
