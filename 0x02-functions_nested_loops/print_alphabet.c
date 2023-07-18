@@ -1,20 +1,19 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * print_alphabet - writes the whole alphabet
+ * print_alphabet - Prints the alphabet in lowercase, followed by a new line
  */
 
 void print_alphabet(void)
 {
+	char letter;
 
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz\n";
-	int length = strlen(alpha);
-	int i;
-
-	for (i = 0; i < length; i++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		_putchar(alpha[i]);
+		_putchar(letter);
 	}
+
+	_putchar('\n');
 }
+
 
