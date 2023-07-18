@@ -1,17 +1,20 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * _abs - Prints the alphabet in lowercase 10 times
+ * print_last_digit - Prints and returns the last digit of a number
+ * @n: The number
  *
- * @n: al carcter
- *
- * Return: On success, returns 1.
- *         On 0, on error
+ * Return: The value of the last digit
  */
-
 int print_last_digit(int n)
 {
+	int last_digit;
 
-    return (abs(n % 10));
+	if (n < 0)
+		n = -n;
+
+	last_digit = n % 10;
+
+
+	return (last_digit);
 }
