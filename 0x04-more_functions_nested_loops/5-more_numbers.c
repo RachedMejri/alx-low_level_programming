@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * more_numbers - prints from 0 to 9 except 2 4
+ * more_numbers - print alot of numbers
  *
  *
- * Return: the multiplication of both a and b
+ * Return: from 0 to 14 10 times
  */
 
 void more_numbers(void)
