@@ -21,7 +21,7 @@ void more_numbers(void)
 			if (j > 9)
 			{
 				_putchar(49);
-				first_num= first_num - 10;
+				first_num = first_num - 10;
 			}
 			_putchar(first_num + 48);
 		}
