@@ -1,16 +1,19 @@
+#include "main.h"
 #include <ctype.h>
 /**
- * main - check if the charter is upper case
- * @c : is the charter
+* _isupper - Checks whether the character passed to it is in uppercase or not.
  *
- * return 0 if succes otherwise 1
+ * @c: The character to be checked.
+ *
+ * return: 0 if upper 1 otherwise
 */
 
-int main(char c)
+int _isupper(int c)
 {
 
 	if (isupper(c))
 		return (0);
 	else
 		return (1);
+
 }
