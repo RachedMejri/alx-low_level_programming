@@ -10,20 +10,16 @@ void more_numbers(void)
 {
 	int i;
 	int j;
-	int first_num;
 
 	for (i = 0 ; i <= 10 ; i++)
 	{
 		for (j = 0 ; j <= 14 ; j++)
 		{
-			first_num = j;
 
 			if (j > 9)
-			{
-				_putchar(49);
-				first_num = first_num - 10;
-			}
-			_putchar(first_num + 48);
+				_putchar("1");
+
+			_putchar(j % 10);
 		}
 
 		_putchar('\n');
