@@ -1,21 +1,23 @@
+#include "main.h"
+
 /**
- * _strchr - Find the first occurrence of a character in a string.
- * @s: string.
- * @c: chniya 7arf.
+ * _strchr - li3tiholi
+ * @s: The string to search in.
+ * @c: The character to locate.
  *
- * Return: raj3 cor 8iro raj3 null.
+ * Return: chaine
  */
-
-
 char *_strchr(char *s, char c)
 {
-	unsigned int i;
-
-	for (i = 0; i < strlen(s); i++)
+	while (*s != '\0')
 	{
-		if (s[i] == c)
-			return (s + i);
+		if (*s == c)
+			return (s);
+		s++;
 	}
+
+	if (*s == c)
+		return (s);
 
 	return (NULL);
 }
