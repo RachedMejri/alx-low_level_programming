@@ -2,6 +2,15 @@
 #include <stdlib.h>
 
 /**
+ * OldWayCal - check if the number is prime number
+ * @nom: al nmbre
+ * @fac: al fac
+ *
+ * Return: return 1 if the number is prime, else 0
+ */
+int OldWayCal(int nom, int fac);
+
+/**
  * is_prime_number - check if the number is prime number
  * @n: al nmbre
  *
