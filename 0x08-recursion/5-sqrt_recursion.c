@@ -1,13 +1,20 @@
 #include "main.h"
 
 /**
- *_sqrt_recursion - calculet the naturual square root of a number
+ * OldWayCal - calcule the square root the old way
+ * @nom: al nmbre
+ * @fac: al fac
+ * Return: the square root
+ */
+int OldWayCal(int nom, int fac);
+
+/**
+ * _sqrt_recursion - calculate the natural square root of a number
  * @n: al nmbre
  *
  * Return: return square root of a number if the square root is a nat number
  *                 else -1
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
@@ -19,12 +26,11 @@ int _sqrt_recursion(int n)
 }
 
 /**
- *OldWayCal - calcule the square root the old way
+ * OldWayCal - calcule the square root the old way
  * @nom: al nmbre
  * @fac: al fac
  * Return: the square root
  */
-
 int OldWayCal(int nom, int fac)
 {
 	if (nom == fac)
