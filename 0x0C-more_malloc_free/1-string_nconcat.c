@@ -3,10 +3,12 @@
 #include <string.h>
 
 /**
- * malloc_checked - allocates memory using malloc
- * @b: size of memory to be allocated
+ * string_nconcat - allocates memory using malloc
+ * @s1: first chain
+ * @s2: second chain
+ * @n: how much to take from the sec
  *
- * Return: pointer to the allocated memory
+ * Return: chain
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
