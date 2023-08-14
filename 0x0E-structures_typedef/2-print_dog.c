@@ -5,7 +5,7 @@
  * print_dog - prints a struct dog
  * @d: pointer to a variable of type struct dog
  *
- * Description: print the name of the dog and all
+ * Description: later
  */
 void print_dog(struct dog *d)
 {
