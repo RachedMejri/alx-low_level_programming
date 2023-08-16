@@ -4,38 +4,39 @@
 
 
 /**
- * op_add - al plus
- * @a: nomro wa7d
- * @b: nomro tnin
+ * op_add - tzid
+ * @a: awl
+ * @b: tani
  *
- * Return: yzido
- *
- *
+ * Return: al plus
  */
+
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
- * op_sub - 3amaliyt tar7
- * @a: nomro wa7d
- * @b: ...
+ * op_sub - n9s
+ * @a: wa7d
+ * @b: tnin
  *
- * Return: yrj3 3amliyt tar7 mta3 zouz
+ * Return: al tar7
  */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * op_mul - darb
- * @a: nomro wa7d
- * @b: nomro tnin
+ * op_mul - mult
+ * @a: awl
+ * @b: tni
  *
- *  Return: darb mt3 wa7d wa tnin
+ *  Return: al darb
  */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
@@ -43,24 +44,39 @@ int op_mul(int a, int b)
 
 /**
  * op_div - div
- * @a: nomro wa7d
- * @b: nomro tnin
+ * @a: wa7d
+ * @b: tnin
  *
- *  Return: div mt3 wa7d wa tnin
+ *  Return: al divison
  */
+
 int op_div(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	return (a / b);
 }
 
 /**
- * op_mod - mod m
+ * op_mod - al mod
  * @a: wa7d
  * @b: tnin
  *
  * Return: yrj3 al mod
  */
+
 int op_mod(int a, int b)
 {
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
 	return (a % b);
+
 }
