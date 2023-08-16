@@ -4,7 +4,7 @@
  * int_index - searches
  * @array: array
  * @size: size array
- * @cmp: comparison 
+ * @cmp: comparison
  *
  * Return: index of the first element for which cmp does not return 0,
  * or -1
