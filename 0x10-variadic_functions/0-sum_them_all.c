@@ -2,15 +2,12 @@
 #include <stdarg.h>
 
 /**
- * sum_them_all - get the sum of numbers given to the function
+ * sum_them_all - function that returns the sum of all its parameters
+ * @n: the number of integers
+ * @...: the integers
  *
- * @n: the number of number
- * @... : the ints
- *
- * Return: the sum of the numbers
- *  or 0 if n=0
-*/
-
+ * Return: the sum of the numbers or 0 if n = 0
+ */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
@@ -20,13 +17,18 @@ int sum_them_all(const unsigned int n, ...)
 	int sum = 0;
 
 	if (n == 0)
+	{
+		va_end(args);
 		return (0);
+	}
 
-	for (int i = 0; i < n; i++)
+	for (unsigned int i = 0; i < n; i++)
 	{
 		int x = va_arg(args, int);
 
 		sum += x;
 	}
+
+	va_end(args);
 	return (sum);
 }
