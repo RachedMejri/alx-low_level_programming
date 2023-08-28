@@ -1,0 +1,1 @@
+i Really dont want to go to collage i feel like everyone thinks im dumb and i cant hold on my own
