@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * print_binary - from 10 to 2
  * @n: nombre
