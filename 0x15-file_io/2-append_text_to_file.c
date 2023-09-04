@@ -12,7 +12,7 @@
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int f;
-	ssize_t n_written;
+	ssize_t writingnum;
 
 	if (!filename)
 		return (-1);
@@ -21,8 +21,8 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	if (text_content)
 	{
-		n_written = write(f, text_content, strlen(text_content));
-		if (n_written == -1)
+		writingnum = write(f, text_content, strlen(text_content));
+		if (writingnum == -1)
 			return (-1);
 	}
 	close(f);
