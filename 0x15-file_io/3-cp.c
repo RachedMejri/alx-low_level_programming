@@ -2,6 +2,7 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 #define BUFFER_SIZE 1024
 #define USAGE "Usage: cp file_from file_to\n"
@@ -26,28 +27,22 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 		exit_with_error(USAGE, 97);
-
 	fd_from = open(argv[1], O_RDONLY);
 	if (fd_from == -1)
 		exit_with_error(READ_ERROR, 98, argv[1]);
-
 	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 		exit_with_error(WRITE_ERROR, 99, argv[2]);
-
 	while ((n_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 		if (write(fd_to, buffer, n_read) != n_read)
 			exit_with_error(WRITE_ERROR, 99, argv[2]);
 
 	if (n_read == -1)
 		exit_with_error(READ_ERROR, 98, argv[1]);
-
 	if (close(fd_from) == -1)
 		exit_with_error(CLOSE_ERROR, 100, fd_from);
-
 	if (close(fd_to) == -1)
 		exit_with_error(CLOSE_ERROR, 100, fd_to);
-
 	return (0);
 }
 
