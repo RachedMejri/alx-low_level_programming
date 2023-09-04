@@ -2,7 +2,6 @@
 #include <fcntl.h>
 #include <stdlib.h>
 #include <stdio.h>
-
 #define BUFFER_SIZE 1024
 #define USAGE "Usage: cp file_from file_to\n"
 #define READ_ERROR "Error: Can't read from file %s\n"
