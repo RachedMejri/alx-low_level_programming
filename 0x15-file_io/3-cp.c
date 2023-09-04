@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		close(ffrom);
-		exit(98);
+		exit(99);
 	}
 	while ((reading = read(ffrom, temp, BUFFER_SIZE)) > 0)
 	{
@@ -58,12 +58,12 @@ int main(int argc, char *argv[])
 	if (close(ffrom) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", ffrom);
-		exit(101);
+		exit(100);
 	}
 	if (close(tto) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", tto);
-		exit(101);
+		exit(100);
 	}
 	return (0);
 }
